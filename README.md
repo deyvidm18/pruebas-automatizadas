@@ -1,8 +1,11 @@
 # Pruebas Automatizadas de Software | MISO
+**Proyecto elaborado por William Sanchez y Deyvid Martínez | MISO**
 ## _Pruebas E2E_
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Proyecto de automatización de pruebas de Software, utilizando - [Kraken] y [Cypress.io]
+
+
 
 ## Escenarios de Pruebas
 
@@ -71,7 +74,6 @@ Ambas herramientas son muy poderosas para automatizar las pruebas E2E y permiten
 - La instalación fue más simple que Kraken, pero la elaboración de las pruebas fue menos ágil
 
 
-**Proyecto elaborado por William Sanchez y Deyvid Martínez | MISO**
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
