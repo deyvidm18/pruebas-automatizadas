@@ -57,6 +57,9 @@ cd myCypress
 $(npm bin)/cypress open 
 ```
 
+Para visualizar los resultados se debe consultar el siguiente enlace [Github](https://github.com/deyvidm18/pruebas-automatizadas/tree/main/myCypress/cypress/videos)
+
+
 ## Análisis de los resultados de las pruebas.
 
 Ambas herramientas son muy poderosas para automatizar las pruebas E2E y permiten una excelente cobertura de pruebas, sin embargo el proceso de instalación y resolución de problemas técnicos es algo complejo sobretodo. La ejecución de las pruebas requiere una curva de aprendizaje importante y puede ser un freno importante para su adopción. Es importante destacar, que luego de superar la primera fase de uso en las herramientas, la velocidad de creación de las pruebas se acelera mucho. Luego de utilizar las herramientas estas son las conclusiones para cada una de ellas.
