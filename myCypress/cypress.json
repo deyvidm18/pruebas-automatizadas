@@ -1,0 +1,6 @@
+{ 
+    "baseUrl": "http://localhost:2368/ghost/#/",
+    "modifyObstructiveCode": true,
+    "experimentalSourceRewriting": true,
+    "chromeWebSecurity": false
+}
