@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-08T04:13:40.989Z",
+    "end": "2021-03-08T04:13:49.865Z",
+    "duration": 8876,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "427f30d5-1608-402d-82c7-ccbc904dc480",
+      "title": "",
+      "fullFile": "cypress/integration/change_site_title_description.spec.js",
+      "file": "cypress/integration/change_site_title_description.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "833ca0a8-f458-4caa-93f2-4ff957bd65bf",
+          "title": "Change the site description",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change the description",
+              "fullTitle": "Change the site description Change the description",
+              "timedOut": null,
+              "duration": 8660,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('signin');\ncy.get('.email').type('deyvidm18@gmail.com').should('have.value', 'deyvidm18@gmail.com');\ncy.get('.password').type('m!K5K8V@HkFkPMr').should('have.value', 'm!K5K8V@HkFkPMr');\ncy.get('.login').click();\ncy.get('ul.gh-nav-manage > li.gh-nav-list-h:first-child').should('have.text', 'Manage');\ncy.get('ul.gh-nav-settings > li.gh-nav-list-h:first-child').should('have.text', 'Settings');\ncy.get('ul.gh-nav-settings > li:nth-child(2) > a').click();\ncy.get('.mt2 >.gh-setting-first .gh-setting-action .gh-btn:first-child').click({\n  force: true\n});\ncy.get('div.description-container>input.gh-input').clear({\n  force: true\n});\ncy.get('div.description-container>input.gh-input').type('Description').should('have.value', 'Description');\ncy.get('button.gh-btn-blue').click();",
+              "err": {},
+              "uuid": "eea33ad5-8b25-4a6c-8706-daa3308a7db3",
+              "parentUUID": "833ca0a8-f458-4caa-93f2-4ff957bd65bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eea33ad5-8b25-4a6c-8706-daa3308a7db3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8660,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

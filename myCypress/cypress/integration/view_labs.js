@@ -1,5 +1,5 @@
-describe('Invite new people to staff', () => {
-    it('Add staff member', () => {
+describe('View labs', () => {
+    it('view experimental features page', () => {
       cy.visit('signin')
       cy.get('.email')
       .type('deyvidm18@gmail.com').should('have.value', 'deyvidm18@gmail.com')
@@ -11,10 +11,8 @@ describe('Invite new people to staff', () => {
       cy.get('ul.gh-nav-settings > li.gh-nav-list-h:first-child')
       .should('have.text', 'Settings')
 
-      cy.get('ul.gh-nav-manage > li:nth-child(5) > a').click()
-      cy.get('.gh-btn-green').click({"force": true})
-      cy.get('#new-user-email').type('some-test-user@gmail.com').should('have.value', 'some-test-user@gmail.com')
-      cy.get('.modal-footer > .gh-btn-green').click({"force": true})
-
+      cy.visit('settings/labs')
+      cy.get('.gh-canvas-title').should('have.text', '\n            Labs\n        ')
+      
     })
   })

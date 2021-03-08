@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-08T04:14:54.027Z",
+    "end": "2021-03-08T04:14:59.237Z",
+    "duration": 5210,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c68f057-f69f-438e-92e5-179d51d352e7",
+      "title": "",
+      "fullFile": "cypress/integration/view_about_page.js",
+      "file": "cypress/integration/view_about_page.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e5834d3-8de2-4e95-8bbb-cb2dcf8c386f",
+          "title": "View about page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get ghost version 3.41.3",
+              "fullTitle": "View about page Get ghost version 3.41.3",
+              "timedOut": null,
+              "duration": 4998,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('signin');\ncy.get('.email').type('deyvidm18@gmail.com').should('have.value', 'deyvidm18@gmail.com');\ncy.get('.password').type('m!K5K8V@HkFkPMr').should('have.value', 'm!K5K8V@HkFkPMr');\ncy.get('.login').click();\ncy.get('ul.gh-nav-manage > li.gh-nav-list-h:first-child').should('have.text', 'Manage');\ncy.get('ul.gh-nav-settings > li.gh-nav-list-h:first-child').should('have.text', 'Settings');\ncy.visit('about');\ncy.get('.gh-env-list-version').should('have.text', 'Version 3.41.3');",
+              "err": {},
+              "uuid": "78f1dfc6-a3f8-4441-9c53-3ccf39422207",
+              "parentUUID": "8e5834d3-8de2-4e95-8bbb-cb2dcf8c386f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "78f1dfc6-a3f8-4441-9c53-3ccf39422207"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4998,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
