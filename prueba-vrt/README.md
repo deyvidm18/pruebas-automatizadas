@@ -59,7 +59,10 @@ Este emitira una carpeta con el correspondiente informe en results
 
 Se evidencia que hay modificaciones de contenido que que no se encuentran sustentadas por la nueva instalación del administrador de contenido Ghost 3.3.0. Teniendo en cuenta esto se reportan los correspondientes Bugs en el repositorio. 
 
-Por favor para ver la guia del reporte con sus correspondientes muestra tomar el siguiente link.
+Por favor para ver la guia del reporte con sus correspondientes muestra tomar la carpeta **screenshots** y dar click en el archivo **index.html**.
+	
+ -   prueba-vrt/screenshots/index.html
+
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
