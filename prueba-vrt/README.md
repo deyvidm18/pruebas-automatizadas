@@ -29,25 +29,37 @@ En este caso se recomienda seguir las intrucciones de instalación del siguiente
 
 ## Pruebas Cypress.io
 
-:
-```sh
-cd myCypress
-$(npm bin)/cypress open 
-```
+Para corroborar los scripts echos en la herramienta por favor tener encuenta las siguientes instrucciones:
+
+- Tomelos de la carpeta con el nombre de prueba-vrt/casos-cypress
+- En ella encontra los siguientes archivos:
+	- caso_prueba_home.js
+	- caso_prueba_home_new.js
+	- caso_print_screen_admin.js
+	- casp _print_screen_admin_new.js
+- Copie los archivos descritos en la ruta correspondiente a su instalación cypress en $CYPRESS_HOME/cypress/cypress/integration.
+- Inicie cypress open
+- Ejecutelos en el orden conque se menciona en el listado anterior.
+- Copie la carpeta SCREENSHOTS que se en cuentra en la ruta $CYPRESS_HOME/cypress/cypress/screenshots.
+- la cual contiene las siguientes subcarpetas:
+	- caso_prueba_home.js
+	- caso_prueba_home_new.js
+	- caso_print_screen_admin.js
+	- caso_print_screen_admin_new.js
+- Pegue la carpeta en la ubicación fisica de su pc en donde clono el proyecto resemble quedando de esta manera:
+	- prueba-vrt/resemble/results/screenshots
+-Ejecute el test con 
+	- node index.js
+Este emitira una carpeta con el correspondiente informe en results
+	- index.html
+
 
 
 ## Análisis de los resultados de las pruebas.
 
+Se evidencia que hay modificaciones de contenido que que no se encuentran sustentadas por la nueva instalación del administrador de contenido Ghost 3.3.0. Teniendo en cuenta esto se reportan los correspondientes Bugs en el repositorio. 
 
-
-
-## Análisis Cypress.io
-
-- Es una herramienta muy utilizada para la automatización de pruebas en entornos web. Existe mucha documentación en la web.
-- Requiere un mayor conocimiento técnico para la elaboración de las pruebas, y su lectura no es tan amigable como Kraken.
-- No tiene un comportamiento correcto con el redireccionamiento dinámico de los sitios webs. Este problema se encuentra debidamente reportado en su sitio web, y se prevé que se va a solucionar en muchas versiones.
-- La instalación fue más simple que Kraken, pero la elaboración de las pruebas fue menos ágil
-
+Por favor para ver la guia del reporte con sus correspondientes muestra tomar el siguiente link.
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
