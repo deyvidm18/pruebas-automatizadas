@@ -1,0 +1,60 @@
+{
+    "correctLogin": {
+        "username"  :  "deyvidm18@gmail.com",
+        "password"  :  "m!K5K8V@HkFkPMr"
+    },
+    "badUser": {
+        "username"  :  "deyvidm19@gmail.com",
+        "password"  :  "m!K5K8V@HkFkPMr"
+    },
+    "badUser2": {
+        "username"  :  "deyvidm18",
+        "password"  :  "m!K5K8V@HkFkPMr"
+    },
+    "badUser3": {
+        "username"  :  "deyvidm18@outlook.com",
+        "password"  :  "m!K5K8V@HkFkPMr"
+    },
+    "badUser4": {
+        "username"  :  " ",
+        "password"  :  "m!K5K8V@HkFkPMr"
+    },
+    "badUser5": {
+        "username"  :  "123XXX",
+        "password"  :  "m!K5K8V@HkFkPMr"
+    },
+    "badPassword": {
+        "username"  :  "deyvidm18@gmail.com",
+        "password"  :  "m!K5K8V@HkFkPMR"
+    },
+    "badPasswor2": {
+        "username"  :  "deyvidm18@gmail.com",
+        "password"  :  "m!K5K8V@HkFkPM"
+    },
+    "badPasswor3": {
+        "username"  :  "deyvidm18@gmail.com",
+        "password"  :  " m!K5K8V@HkFkPM "
+    },
+    "badPasswor4": {
+        "username"  :  "deyvidm18@gmail.com",
+        "password"  :  "XXX"
+    },
+    "badPasswor5": {
+        "username"  :  "deyvidm18@gmail.com",
+        "password"  :  " "
+    },
+
+    "description": "Descripción",
+    "description2": "D",
+    "description3": " ",
+    "title": "Title",
+    "title2": "D",
+    "email": "deyvidm18@outlook.com",
+    "bad_email": "deyvidm18",
+    "bad_email2": "deyvidm18@",
+    "bad_email3": "deyvidm18@gmail",
+    "tag": "tag1",
+    "tag2": "tag2",
+    "tag3": "tag3",
+    "color": "800080"  
+}

@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-14T23:34:51.053Z",
+    "end": "2021-03-14T23:35:09.896Z",
+    "duration": 18843,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f6c2a85c-bbee-486f-a135-cddb5ad4051b",
+      "title": "",
+      "fullFile": "cypress/integration/pool-datos/new_post.spec.js",
+      "file": "cypress/integration/pool-datos/new_post.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "87889a77-eb0d-4c6b-9adf-f5772cb36fb2",
+          "title": "Create new Post",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new post to add content to the site",
+              "fullTitle": "Create new Post Create a new post to add content to the site",
+              "timedOut": null,
+              "duration": 6276,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"pool-data.json\").then(function (data) {\n  var user = data.username;\n  var password = data.password;\n  var title = data.description;\n  cy.visit(\"signin\");\n  cy.get(\".email\").type(user).should(\"have.value\", user);\n  cy.get(\".password\").type(password).should(\"have.value\", password);\n  cy.get(\".login\").click();\n  cy.get(\"ul.gh-nav-manage > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Manage\");\n  cy.get(\"ul.gh-nav-settings > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Settings\");\n  cy.get(\"ul.gh-nav-manage > li:nth-child(2) > a:nth-child(2)\").click();\n  cy.get(\"textarea.gh-editor-title\").type(title).should(\"have.value\", title);\n});",
+              "err": {},
+              "uuid": "22f3bb42-e1cf-4b71-9100-00e54eee93d5",
+              "parentUUID": "87889a77-eb0d-4c6b-9adf-f5772cb36fb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new post to add content to the site",
+              "fullTitle": "Create new Post Create a new post to add content to the site",
+              "timedOut": null,
+              "duration": 3969,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"pool-data.json\").then(function (data) {\n  var user = data.username;\n  var password = data.password;\n  var title = data.description2;\n  cy.visit(\"signin\");\n  cy.get(\".email\").type(user).should(\"have.value\", user);\n  cy.get(\".password\").type(password).should(\"have.value\", password);\n  cy.get(\".login\").click();\n  cy.get(\"ul.gh-nav-manage > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Manage\");\n  cy.get(\"ul.gh-nav-settings > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Settings\");\n  cy.get(\"ul.gh-nav-manage > li:nth-child(2) > a:nth-child(2)\").click();\n  cy.get(\"textarea.gh-editor-title\").type(title).should(\"have.value\", title);\n});",
+              "err": {},
+              "uuid": "af006266-701f-4306-a7e1-2da7f5132760",
+              "parentUUID": "87889a77-eb0d-4c6b-9adf-f5772cb36fb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new post to add content to the site",
+              "fullTitle": "Create new Post Create a new post to add content to the site",
+              "timedOut": null,
+              "duration": 2825,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"pool-data.json\").then(function (data) {\n  var user = data.username;\n  var password = data.password;\n  var title = data.description3;\n  cy.visit(\"signin\");\n  cy.get(\".email\").type(user).should(\"have.value\", user);\n  cy.get(\".password\").type(password).should(\"have.value\", password);\n  cy.get(\".login\").click();\n  cy.get(\"ul.gh-nav-manage > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Manage\");\n  cy.get(\"ul.gh-nav-settings > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Settings\");\n  cy.get(\"ul.gh-nav-manage > li:nth-child(2) > a:nth-child(2)\").click();\n  cy.get(\"textarea.gh-editor-title\").type(title).should(\"have.value\", title);\n});",
+              "err": {},
+              "uuid": "d6c92319-7567-404a-b787-a2a9699faef0",
+              "parentUUID": "87889a77-eb0d-4c6b-9adf-f5772cb36fb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new post to add content to the site",
+              "fullTitle": "Create new Post Create a new post to add content to the site",
+              "timedOut": null,
+              "duration": 2879,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"pool-data.json\").then(function (data) {\n  var user = data.username;\n  var password = data.password;\n  var title = data.description4;\n  cy.visit(\"signin\");\n  cy.get(\".email\").type(user).should(\"have.value\", user);\n  cy.get(\".password\").type(password).should(\"have.value\", password);\n  cy.get(\".login\").click();\n  cy.get(\"ul.gh-nav-manage > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Manage\");\n  cy.get(\"ul.gh-nav-settings > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Settings\");\n  cy.get(\"ul.gh-nav-manage > li:nth-child(2) > a:nth-child(2)\").click();\n  cy.get(\"textarea.gh-editor-title\").type(title).should(\"have.value\", title);\n});",
+              "err": {},
+              "uuid": "8732141e-07cf-4d68-bb03-28ffca2429bd",
+              "parentUUID": "87889a77-eb0d-4c6b-9adf-f5772cb36fb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new post to add content to the site",
+              "fullTitle": "Create new Post Create a new post to add content to the site",
+              "timedOut": null,
+              "duration": 2818,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"pool-data.json\").then(function (data) {\n  var user = data.username;\n  var password = data.password;\n  var title = data.description5;\n  cy.visit(\"signin\");\n  cy.get(\".email\").type(user).should(\"have.value\", user);\n  cy.get(\".password\").type(password).should(\"have.value\", password);\n  cy.get(\".login\").click();\n  cy.get(\"ul.gh-nav-manage > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Manage\");\n  cy.get(\"ul.gh-nav-settings > li.gh-nav-list-h:first-child\").should(\"have.text\", \"Settings\");\n  cy.get(\"ul.gh-nav-manage > li:nth-child(2) > a:nth-child(2)\").click();\n  cy.get(\"textarea.gh-editor-title\").type(title).should(\"have.value\", title);\n});",
+              "err": {},
+              "uuid": "063882c4-aa8f-4eeb-807a-0bc13f0e5800",
+              "parentUUID": "87889a77-eb0d-4c6b-9adf-f5772cb36fb2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "22f3bb42-e1cf-4b71-9100-00e54eee93d5",
+            "af006266-701f-4306-a7e1-2da7f5132760",
+            "d6c92319-7567-404a-b787-a2a9699faef0",
+            "8732141e-07cf-4d68-bb03-28ffca2429bd",
+            "063882c4-aa8f-4eeb-807a-0bc13f0e5800"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18767,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

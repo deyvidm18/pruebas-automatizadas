@@ -1,6 +1,15 @@
 { 
     "baseUrl": "http://localhost:2368/ghost/#/",
     "modifyObstructiveCode": true,
+    "pageLoadTimeout": 20000,
     "experimentalSourceRewriting": true,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "reporter": "mochawesome",
+     "reporterOptions": {
+       "charts": true,
+       "overwrite": false,
+       "html": false,
+       "json": true,
+       "reportDir": "cypress/report/mochawesome-report"
+     }
 }
