@@ -13,11 +13,46 @@ Dentro del alcance del proyecto se contempla la ejecución de 142 escenarios de 
 
 ## Escenarios A-Priori:
 En los cuales se generá la data a probar de forma manual, antes de la ejecución de las pruebas. Se encuentran dentro del folder **integration/a-priori/** y utilizan un archivo de data (data.json) generado previo a la ejecución de las pruebas.
+
+Ejemplo:
+
+A continuación se detalla un segmento de código donde se lee la data del archivo **data.json** para obtener los valores de user y password
+
+```sh
+ cy.fixture("data.json").then((data) => {
+      const user = data.correctLogin.username;
+      const password = data.correctLogin.password;
+```
+
+
 ## Datos Aleatorios:
 Los datos son generados a través de la librería faker, al momento de la ejecución de las pruebas. Se encuentran dentro del folder **integration/aleatorio/**
 
+Ejemplo:
+
+A continuación se detalla un segmento de código donde se visualiza la utilización de la librería faker para la generación de data de forma aleatoria, para una cuenta de correo electrónico.
+
+```sh
+const user = faker.internet.email();
+```
+
 ## Pool-Datos
 Los datos son generados de forma aleatoria y almacenados en un archivo de formato JSON, para su utilización durante las pruebas. Se encuentran dentro del folder **integration/pool-datos/** Al iniciar la ejecución de las pruebas se crea un archivo pool-data.json con datos generados de forma aleatoria a través de la librería faker.js, y este archivo es el utilizado para la ejecución de las pruebas.
+
+Ejemplo:
+
+A continuación se detalla un segmento de código donde se visualiza  la generación del archivo pool-data.json para ser utilizado como insumo de data para la ejecución de las pruebas. Este código se implementa en el archivo **support/index.js** para ser ejecutado antes de todas las pruebas.
+
+```sh
+before(() => {
+  cy.readFile("cypress/fixtures/pool-data.json", (err, data) => {
+    if (err) {
+      return console.error(err);
+    }
+  }).then((data) => {
+    data.username =  "deyvidm18@gmail.com";
+    data.password= "m!K5K8V@HkFkPMr";
+```
 
 ## Escenarios de Pruebas
 
