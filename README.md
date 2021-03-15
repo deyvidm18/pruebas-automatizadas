@@ -75,6 +75,19 @@ npx marge mochawesome.json
 
 La utilización de generación de datos aleatorios, permite la rápida aplicación de múltiples escenarios de pruebas para validar casos de borde y escenarios de datos no válidos. La utilización de estas herramientas, permite abarcar una gran cantidad de casos que de forma manual serían imposibles o tomarían demasiado tiempo su ejecución.
 
+## Resultados HTML
+
+Dentro del repositorio se comparte el reporte en HTML para la visualización de los resultados de las pruebas:
+
+https://github.com/deyvidm18/pruebas-automatizadas/blob/semana7/myCypress/cypress/report/mochawesome-report/mochawesome-report/mochawesome.html
+
+
+## Resultados Videos
+
+Dentro del repositorio se comparten los videos con la evidencia de las pruebas ejecutadas:
+
+https://github.com/deyvidm18/pruebas-automatizadas/tree/semana7/myCypress/cypress/videos
+
 
 
 
