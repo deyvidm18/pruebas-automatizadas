@@ -3,7 +3,7 @@
 ## _Pruebas E2E_
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Proyecto de automatización de pruebas de Software, utilizando - [Kraken] y [Cypress.io]
+Proyecto de automatización de pruebas de Software **Generación de datos**
 
 
 
@@ -109,7 +109,7 @@ npx marge mochawesome.json
 
 ## Análisis de los resultados de las pruebas.
 
-La utilización de generación de datos aleatorios, permite la rápida aplicación de múltiples escenarios de pruebas para validar casos de borde y escenarios de datos no válidos. La utilización de estas herramientas, permite abarcar una gran cantidad de casos que de forma manual serían imposibles o tomarían demasiado tiempo su ejecución.
+La utilización de generación de datos (aleatorios, a-priory y pool-datos), permite la rápida aplicación de múltiples escenarios de pruebas para validar casos de borde y escenarios de datos no válidos. La utilización de estas herramientas, permite abarcar una gran cantidad de casos que de forma manual serían imposibles o tomarían demasiado tiempo su ejecución.
 
 ## Resultados HTML
 
@@ -123,6 +123,12 @@ https://github.com/deyvidm18/pruebas-automatizadas/blob/semana7/myCypress/cypres
 Dentro del repositorio se comparten los videos con la evidencia de las pruebas ejecutadas:
 
 https://github.com/deyvidm18/pruebas-automatizadas/tree/semana7/myCypress/cypress/videos
+
+## Registro de Incidencias
+
+Se registran 10 incidencias relacionadas a la pruebas de generación de datos ejecutadas:
+
+https://github.com/deyvidm18/pruebas-automatizadas/issues/
 
 
 
